@@ -25,7 +25,7 @@ class VIEW3D_OT_materialutilities_assign_material_edit(bpy.types.Operator):
     """Assign a material to the current selection"""
 
     bl_idname  = 'view3d.materialutilities_assign_material_edit'
-    bl_label   = "Assign Material (Material Utilities)"
+    bl_label   = "Assign Material (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     material_name: StringProperty(
@@ -92,7 +92,7 @@ class VIEW3D_OT_materialutilities_assign_material_object(bpy.types.Operator):
     (See the operator panel [F9] for more options)"""
 
     bl_idname  = 'view3d.materialutilities_assign_material_object'
-    bl_label   = "Assign Material (Material Utilities)"
+    bl_label   = "Assign Material (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     material_name: StringProperty(
@@ -169,7 +169,7 @@ class VIEW3D_OT_materialutilities_select_by_material_name(bpy.types.Operator):
     (See the operator panel [F9] for more options)"""
 
     bl_idname  = 'view3d.materialutilities_select_by_material_name'
-    bl_label   = "Select By Material Name (Material Utilities)"
+    bl_label   = "Select By Material Name (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     extend_selection: BoolProperty(
@@ -213,7 +213,7 @@ class VIEW3D_OT_materialutilities_copy_material_to_others(bpy.types.Operator):
     """Copy the material(s) of the active object to the other selected objects"""
 
     bl_idname  = 'view3d.materialutilities_copy_material_to_others'
-    bl_label   = "Copy material(s) to others (Material Utilities)"
+    bl_label   = "Copy material(s) to others (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     @classmethod
@@ -235,7 +235,7 @@ class VIEW3D_OT_materialutilities_clean_material_slots(bpy.types.Operator):
     """Removes any material slots from the selected objects that are not used"""
 
     bl_idname  = 'view3d.materialutilities_clean_material_slots'
-    bl_label   = "Clean Material Slots (Material Utilities)"
+    bl_label   = "Clean Material Slots (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     only_active: BoolProperty(
@@ -307,7 +307,7 @@ class VIEW3D_OT_materialutilities_remove_material_slot(bpy.types.Operator):
     (See the operator panel [F9] for more options)"""
 
     bl_idname  = 'view3d.materialutilities_remove_material_slot'
-    bl_label   = "Remove Active Material Slot (Material Utilities)"
+    bl_label   = "Remove Active Material Slot (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     only_active: BoolProperty(
@@ -333,7 +333,7 @@ class VIEW3D_OT_materialutilities_remove_all_material_slots(bpy.types.Operator):
     (See the operator panel [F9] for more options)"""
 
     bl_idname  = 'view3d.materialutilities_remove_all_material_slots'
-    bl_label   = "Remove All Material Slots (Material Utilities)"
+    bl_label   = "Remove All Material Slots (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     only_active: BoolProperty(
@@ -358,7 +358,7 @@ class VIEW3D_OT_materialutilities_remove_all_material_slots(bpy.types.Operator):
 class VIEW3D_OT_materialutilities_replace_material(bpy.types.Operator):
     """Replace a material by name"""
     bl_idname  = 'view3d.materialutilities_replace_material'
-    bl_label   = "Replace Material (Material Utilities)"
+    bl_label   = "Replace Material (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     mat_org: StringProperty(
@@ -404,7 +404,7 @@ class VIEW3D_OT_materialutilities_replace_material(bpy.types.Operator):
 class VIEW3D_OT_materialutilities_replace_multiple_materials(bpy.types.Operator):
     """Replace a list of material by names"""
     bl_idname  = 'view3d.materialutilities_replace_multiple_materials'
-    bl_label   = "Replace Multiple Material (Material Utilities)"
+    bl_label   = "Replace Multiple Material (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     mats_org: StringProperty(
@@ -450,7 +450,7 @@ class VIEW3D_OT_materialutilities_fake_user_set(bpy.types.Operator):
     """Enable/disable fake user for materials"""
 
     bl_idname  = 'view3d.materialutilities_fake_user_set'
-    bl_label   = "Set Fake User (Material Utilities)"
+    bl_label   = "Set Fake User (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     fake_user: EnumProperty(
@@ -497,7 +497,7 @@ class VIEW3D_OT_materialutilities_change_material_link(bpy.types.Operator):
     """Link the materials to Data or Object, while keeping materials assigned"""
 
     bl_idname  = 'view3d.materialutilities_change_material_link'
-    bl_label   = "Change Material Linking (Material Utilities)"
+    bl_label   = "Change Material Linking (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     override: BoolProperty(
@@ -927,7 +927,7 @@ class MATERIAL_OT_materialutilities_join_objects(bpy.types.Operator):
     """Join objects that have the same (selected) material(s)"""
 
     bl_idname  = 'material.materialutilities_join_objects'
-    bl_label   = "Join by material (Material Utilities)"
+    bl_label   = "Join by material (Material Utilities Unofficial)"
     bl_description = "Join objects that share the same material"
     bl_options = {'REGISTER', 'UNDO'}
 
@@ -990,7 +990,7 @@ class MATERIAL_OT_materialutilities_auto_smooth_angle(bpy.types.Operator):
     # Inspired by colkai
 
     bl_idname  = 'view3d.materialutilities_auto_smooth_angle'
-    bl_label   = "Set Auto Smooth Angle (Material Utilities)"
+    bl_label   = "Set Auto Smooth Angle (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     affect: EnumProperty(
@@ -1049,7 +1049,7 @@ class MATERIAL_OT_materialutilities_remove_unused_materials(bpy.types.Operator):
     # On request by Hologram
 
     bl_idname  = 'view3d.materialutilities_remove_unused_materials'
-    bl_label   = "Remove unused materials (Material Utilities)"
+    bl_label   = "Remove unused materials (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
 
@@ -1389,13 +1389,13 @@ class NODE_OT_materialutilities_add_image_textures(bpy.types.Operator):
     """Open a PBR image texture set"""
 
     bl_idname  = 'node.materialutilities_add_image_textures'
-    bl_label   = "Open image texture set (Material Utilities)"
+    bl_label   = "Open image texture set (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     @classmethod
     def poll(cls, context):
         if bpy.data.scenes['Scene'].render.engine not in mu_supported_engines:
-            print("Material Utilities - Nodes menu: Unsupported render engine: ", bpy.data.scenes['Scene'].render.engine)
+            print("Material Utilities Unofficial - Nodes menu: Unsupported render engine: ", bpy.data.scenes['Scene'].render.engine)
             return False
         return context.area.ui_type == 'ShaderNodeTree' and context.space_data.shader_type == 'OBJECT' and bpy.context.active_object.active_material is not None
 
@@ -1422,13 +1422,13 @@ class NODE_OT_materialutilities_replace_image_textures(bpy.types.Operator):
     """Replace image textures with matching from another set"""
 
     bl_idname  = 'node.materialutilities_replace_image_textures'
-    bl_label   = "Replace image texture set (Material Utilities)"
+    bl_label   = "Replace image texture set (Material Utilities Unofficial)"
     bl_options = {'REGISTER', 'UNDO'}
 
     @classmethod
     def poll(cls, context):
         if bpy.data.scenes['Scene'].render.engine not in mu_supported_engines:
-            print("Material Utilities - Nodes menu: Unsupported render engine: ", bpy.data.scenes['Scene'].render.engine)
+            print("Material Utilities Unofficial - Nodes menu: Unsupported render engine: ", bpy.data.scenes['Scene'].render.engine)
             return False
         return context.area.ui_type == 'ShaderNodeTree' and context.space_data.shader_type == 'OBJECT' and bpy.context.active_object.active_material is not None
 
@@ -1462,7 +1462,7 @@ class VIEW3D_OT_materialutilities_assign_pbr_material(bpy.types.Operator):
     @classmethod
     def poll(cls, context):
         if bpy.data.scenes['Scene'].render.engine not in mu_supported_engines:
-            print("Material Utilities - Assign PBR Material: Unsupported render engine: ",
+            print("Material Utilities Unofficial - Assign PBR Material: Unsupported render engine: ",
                   bpy.data.scenes['Scene'].render.engine)
             return False
         return context.active_object is not None

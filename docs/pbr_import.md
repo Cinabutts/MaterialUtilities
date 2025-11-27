@@ -20,7 +20,7 @@
 This feature lets you import a whole set of textures in one action. It's main purpose is to add a set of PBR (Physically Based Rendering) textures (sometimes called a *PBR material*), but it will import any set of textures to your material (no matter if they follow a certain naming convention or not).
 If you've already added a texture set to your material you can also automatically replace those textures with a new set (keeping the overall material setup)
 
-You can access the functions of this feature in the same way as the main menu for Material Utilities: with the keyboard shortcut `Shift+Q` (by default), but in the *Shader Editor* instead of the *3D View*. There is also an [addition to the *Specials* in the Material Utilities menu in the *3D View*](#assign-new-pbr-material).
+You can access the functions of this feature in the same way as the main menu for Material Utilities Unofficial: with the keyboard shortcut `Shift+Q` (by default), but in the *Shader Editor* instead of the *3D View*. There is also an [addition to the *Specials* in the Material Utilities Unofficial menu in the *3D View*](#assign-new-pbr-material).
 
 ### Demonstration
 
@@ -33,7 +33,7 @@ The resulting node trees could look like this (these include all supported textu
 
 ### Supported Render Engines
 
-Unlike the rest of the Material Utilities, this feature is limited to specific render engines, simply due to that different render engines use different shader and texture nodes. But support for more render engines could be added if they are requested.
+Unlike the rest of the Material Utilities Unofficial, this feature is limited to specific render engines, simply due to that different render engines use different shader and texture nodes. But support for more render engines could be added if they are requested.
 Currently the supported render engines are:
 
 - **Cycles**/**Eevee** (or any other engine that might use the same nodes)
@@ -119,7 +119,7 @@ In Octane there is a *Color space* node (instead of just a property of the image
 So for imports into an Octane material setup we can add (if enabled) a *Color space* node for each unique color space. We will also add one *Color space* node connected to just *RGB images*, and one connected to just *Grayscale images* (So if the color map is ACES, but the rest is sRGB you'll get one *Color space* node for ACES, one for sRGB color, one for sRGB greyscale).
 
 **NB:** For the *Color space* nodes to work correctly, you **do need** some kind of OCIO config set in the Octane Add-on settings.
-(*Material Utilities* assumes that the config loaded is the official ACES config, if not the default "IDs" might not be compatible, if so, you can manually change the mapping by looking for `mu_ocio_colorspace_map` in `enum_values.py`)
+(*Material Utilities Unofficial* assumes that the config loaded is the official ACES config, if not the default "IDs" might not be compatible, if so, you can manually change the mapping by looking for `mu_ocio_colorspace_map` in `enum_values.py`)
 
 **NB2:** Currently (v. 27.16.3, 2023-07-02) the Addon version does not fully support *Color space* nodes (they don't get added to the Octane Node Tree).
 In Octane Blender (v. 27.12) changes to the *Color space* node wont trigger an update, you need to change something else (like toggling the *Invert* option on a texture).
@@ -135,7 +135,7 @@ In Octane Blender (v. 27.12) changes to the *Color space* node wont trigger an u
 
 ### Gamma in Octane
 
-Octane have the option to set gamma values for each image texture (now marked as a legacy feature, succeeded by *Color space*), and *Material Utilities* lets you set that gamma value on import. You can set two different gamma values, one for color textures, and one for non-color textures (set to `2.2` and `1.0`, respectively, by default) on import.
+Octane have the option to set gamma values for each image texture (now marked as a legacy feature, succeeded by *Color space*), and *Material Utilities Unofficial* lets you set that gamma value on import. You can set two different gamma values, one for color textures, and one for non-color textures (set to `2.2` and `1.0`, respectively, by default) on import.
 There's also an option to add common gamma nodes, which lets you easily change the gamma values for several textures at once (group by color and non-color, if applicable), after the import.
 If you're confident that you're not going to want to change the gamma on import, you can choose to hide the gamma value option [in the preferences](#preferences).
 
@@ -151,7 +151,7 @@ Either option in the menu will bring up a file selection dialog. By default this
 
 #### Importing
 
-After you've selected a directory (or specific files) *Material Utilities* will go through the files, try to determine the texture map type, [color space](#color-spaces), add the appropriate image texture node, and then connect them (if enabled) to the shader node.
+After you've selected a directory (or specific files) *Material Utilities Unofficial* will go through the files, try to determine the texture map type, [color space](#color-spaces), add the appropriate image texture node, and then connect them (if enabled) to the shader node.
 
 **Please note** that the import might take some time (especially with Octane [remember to have the render server running]), and that Blender will become unresponsive during the import (and no progress information will, at the moment, be shown).
 
@@ -321,7 +321,7 @@ The name you want the material to have, if it is left empty the name of the dire
 In the [add-on preferences](usage.md#preferences) you can find and change several preferences that affects how the PBR texture import works.
 
 - **Add menu to shader editor header**
-Adds an extra *Material Utilities* menu option to the shader editor header, where you can access the PBR texture import functions.
+Adds an extra *Material Utilities Unofficial* menu option to the shader editor header, where you can access the PBR texture import functions.
 
 - **Add to Assign Material dialog**
 Will add an button to the upper left in the [Assign Material dialog](usage.md#assign-material)
@@ -404,5 +404,5 @@ Set the default gamma values for [non-color and color textures](#supported-textu
 
 ## Document info
 
-Written by ChrisHinde for version 3.0.0 of Material Utilities (2023-07-04, v1)
+Written by ChrisHinde for version 3.0.0 of Material Utilities Unofficial (2023-07-04, v1)
 CC-BY-SA

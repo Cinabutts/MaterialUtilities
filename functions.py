@@ -367,7 +367,7 @@ def mu_select_by_material_name(self, find_material_name, extend_selection = Fals
                 # (i.e. Meta balls)
                 self.report({'WARNING'}, "The type '"
                                             + obj.type
-                                            + "' isn't supported in Edit mode by Material Utilities!")
+                                            + "' isn't supported in Edit mode by Material Utilities Unofficial!")
                 #return {'CANCELLED'}
 
         bpy.context.view_layer.objects.active = active_object
@@ -545,7 +545,7 @@ def mu_cleanmatslots(self, affect, selected_collection = ""):
             # Some object types are not supported
             self.report({'WARNING'},
                         "The type '" + obj.type + "' isn't currently supported " +
-                        "for Material slots cleaning by Material Utilities!")
+                        "for Material slots cleaning by Material Utilities Unofficial!")
 
     if edit_mode:
         bpy.ops.object.mode_set(mode='EDIT')
@@ -1157,7 +1157,7 @@ def mu_create_default_shader_node(nodes, engine, node, out_node = None,
 
     if engine == 'OCTANE':
         if prefs.mat_node_type not in mu_default_shader_nodes[engine].keys():
-            print("Material Utilities - No matching node for '%s' found, using default node!"
+            print("Material Utilities Unofficial - No matching node for '%s' found, using default node!"
                   % prefs.mat_node_type)
             def_node = '_DEFAULT'
 
@@ -1361,7 +1361,7 @@ def mu_add_image_texture(filename, filetype, prefs,
             if input is not None:
                 links.new(link_node.outputs[0], first_node.inputs[input])
             else:
-                print("Material Utilities - No input for %s to %s found, skipping link" % 
+                print("Material Utilities Unofficial - No input for %s to %s found, skipping link" % 
                       (filetype.map, first_node.bl_idname))
 
             if prefs.connect_alpha and filetype.has_alpha:
@@ -1426,7 +1426,7 @@ def mu_add_image_texture(filename, filetype, prefs,
                 if msg is None:
                     msg = "No input for %s to %s found, skipping link" % \
                             (filetype.map, first_node.bl_idname)
-                print("Material Utilities - " + msg)
+                print("Material Utilities Unofficial - " + msg)
 
     node.location = mu_calc_node_location(first_node, node, filetype, engine,
                                           x_offset=x_offset, prefs=prefs)
@@ -1551,11 +1551,11 @@ def mu_add_image_textures(self, prefs, directory = None, file_list = [], file_pa
     elif engine == 'octane':
         engine = engine.upper()
     else:
-        print("Material Utilities - Add image Textures: Unsupported render engine: ",
+        print("Material Utilities Unofficial - Add image Textures: Unsupported render engine: ",
               bpy.data.scenes['Scene'].render.engine)
         self.report({'WARNING'}, "The render engine '" +
                                     bpy.data.scenes['Scene'].render.engine +
-                                    "' isn't supported by Material Utilities!")
+                                    "' isn't supported by Material Utilities Unofficial!")
         return {'CANCELLED'}
 
     first_node  = None
@@ -1611,7 +1611,7 @@ def mu_add_image_textures(self, prefs, directory = None, file_list = [], file_pa
         if prefs.connect:
             prefs.connect = False
             msg += " Wont try to connect added textures!"
-        print("Material Utilities - " + msg)
+        print("Material Utilities Unofficial - " + msg)
         self.report({'WARNING'},  msg)
 
         # Create a "faux-node" so to aid in further operations
@@ -1625,7 +1625,7 @@ def mu_add_image_textures(self, prefs, directory = None, file_list = [], file_pa
             if prefs.connect:
                 prefs.connect = False
                 msg += " Wont try to connect added textures!"
-            print("Material Utilities - " + msg)
+            print("Material Utilities Unofficial - " + msg)
             self.report({'WARNING'}, msg)
 
         location = first_node.location
@@ -2089,12 +2089,12 @@ def mu_replace_image_textures(self, prefs, directory = None,
     elif engine == 'octane':
         engine = engine.upper()
     else:
-        print("Material Utilities - Add image Textures: Unsupported render engine: ",
+        print("Material Utilities Unofficial - Add image Textures: Unsupported render engine: ",
               bpy.data.scenes['Scene'].render.engine)
         self.report({'WARNING'},
                     "The render engine '"
                     + bpy.data.scenes['Scene'].render.engine
-                    + "' isn't supported by Material Utilities!")
+                    + "' isn't supported by Material Utilities Unofficial!")
         return {'CANCELLED'}
 
     nodes = mat.node_tree.nodes

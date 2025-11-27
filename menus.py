@@ -227,7 +227,7 @@ class VIEW3D_MT_materialutilities_select_by_material(bpy.types.Menu):
                             ).show_dialog = True
 
 class VIEW3D_MT_materialutilities_specials(bpy.types.Menu):
-    """Specials menu for Material Utilities"""
+    """Specials menu for Material Utilities Unofficial"""
 
     bl_idname = 'VIEW3D_MT_materialutilities_specials'
     bl_label  = "Specials"
@@ -265,10 +265,10 @@ class VIEW3D_MT_materialutilities_specials(bpy.types.Menu):
         op.angle  = mu_prefs.auto_smooth_angle
 
 class VIEW3D_MT_materialutilities_main(bpy.types.Menu):
-    """Main menu for Material Utilities"""
+    """Main menu for Material Utilities Unofficial"""
 
     bl_idname = 'VIEW3D_MT_materialutilities_main'
-    bl_label  = "Material Utilities"
+    bl_label  = "Material Utilities Unofficial"
 
     def draw(self, context):
         mu_prefs = materialutilities_get_preferences(context)
@@ -323,10 +323,10 @@ class VIEW3D_MT_materialutilities_main(bpy.types.Menu):
 
 
 class NODE_MT_materialutilities_shadereditor_menu(bpy.types.Menu):
-    """Shader editor menu for Material Utilities"""
+    """Shader editor menu for Material Utilities Unofficial"""
 
     bl_idname = 'NODE_MT_materialutilities_shader_menu'
-    bl_label  = "Material Utilities"
+    bl_label  = "Material Utilities Unofficial"
 
     def draw(self, context):
         layout = self.layout

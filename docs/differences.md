@@ -1,4 +1,4 @@
-# What's the difference? - Material Utilities vs Material Utils
+# What's the difference? - Material Utilities Unofficial vs Material Utils
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ This document (as well as the Add-on it details) was authored by Christopher Hin
 
 ### Short Background
 
-The goal with the Add-on *Material Utilities* is to bring the functionality of *Material Utils* from 2.79 to 2.8x.\
+The goal with the Add-on *Material Utilities Unofficial* is to bring the functionality of *Material Utils* from 2.79 to 2.8x.\
 Wdhen I started using 2.80 (in beta) I was instanly missing several of the functions that *Material Utils* provided
 (mainly material assignment and selection in the 3D viewport), as I couldn't find a port for 2.80 (or one in development)
 I started porting it myself. While porting the code I decided to add some functionality to it that I thought could be useful.\
@@ -57,11 +57,11 @@ Since 2.80 dropped the "Blender Internal"/"Blender Render" engine, none of the f
 This is a bit of a special case in the switch from 2.79 to 2.80.\
 Textures doesn't work in the same way in 2.8x as in 2.7x, mainly because of the exclusion of Blender Render.
 While textures exists in a similar way as before, they are used for brushes and modifiers, but not for materials.\
-The question is then if, helpful as it might be, be included in an Add-on as *Material Utilities*.
+The question is then if, helpful as it might be, be included in an Add-on as *Material Utilities Unofficial*.
 
 ## <a name="preview-active-material"></a>Preview Active Material - Not added
 
-The Material Preview hasn't yet been implemented in *Material Utilities*, and there's some questions about if it should be included.
+The Material Preview hasn't yet been implemented in *Material Utilities Unofficial*, and there's some questions about if it should be included.
 We now have "LookDev", as well as rendered view, in 2.8x, which gives a better preview of the material than the preview.
 But even so, it could exist some uses cases where a material preview, accessible via a shortcut, could be useful.
 The ability to see all available materials in a grid view is pretty nice as well.
@@ -111,8 +111,8 @@ Here's a (short) list of things that might be added in the future
 
 - In 2.7x the "popup menu" (Shift+Q) was labeled *Material Specials Menu*, that has been changed to *Material Utilities*.\
   This was the internal name for the menu accessible via the "Down arrow" to the right of the material list (in 2.7x).
-  But in 2.8x that's also how that menu is labeled in the UI (in the tooltip) and we shouldn't risk confusing the user
-  by using the same label.
+    But in 2.8x that's also how that menu is labeled in the UI (in the tooltip) and we shouldn't risk confusing the user
+    by using the same label. In this project it's referred to as *Material Utilities Unofficial*.
 
 - The option to remove separators in the menus was not added.\
   The use for it (especially with todays screen resolutions etc) is questionable, more so weighted against the added

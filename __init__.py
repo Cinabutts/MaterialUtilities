@@ -1,4 +1,4 @@
-# Material Utilities v3.0.2
+# Material Utilities Unofficial v3.0.2
 #
 #  Usage: Shift + Q in the 3D viewport or Shader Node Editor
 #
@@ -33,7 +33,7 @@
 # ##### END GPL LICENSE BLOCK #####
 
 bl_info = {
-    "name": "Material Utilities",
+    "name": "Material Utilities Unofficial",
     "author": "ChrisHinde, MichaleW",
     "version": (3, 0, 2),
     "blender": (4, 2, 0),
@@ -115,7 +115,7 @@ from bpy.types import (
     )
 
 
-# All classes used by Material Utilities, that need to be registered
+# All classes used by Material Utilities Unofficial, that need to be registered
 classes = (
     VIEW3D_OT_materialutilities_assign_material_object,
     VIEW3D_OT_materialutilities_assign_material_edit,
@@ -175,7 +175,7 @@ def materialutilities_manual_map():
 mu_classes_register, mu_classes_unregister = bpy.utils.register_classes_factory(classes)
 
 def register():
-    """Register the classes of Material Utilities together with the default shortcut (Shift+Q)"""
+    """Register the classes of Material Utilities Unofficial together with the default shortcut (Shift+Q)"""
     mu_classes_register()
 
     bpy.types.VIEW3D_MT_object_context_menu.append(materialutilities_specials_menu)
@@ -201,7 +201,7 @@ def register():
 
 
 def unregister():
-    """Unregister the classes of Material Utilities together with the default shortcut for the menu"""
+    """Unregister the classes of Material Utilities Unofficial together with the default shortcut for the menu"""
 
     bpy.utils.unregister_manual_map(materialutilities_manual_map)
 

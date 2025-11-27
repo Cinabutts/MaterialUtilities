@@ -1,4 +1,4 @@
-# Material Utilities - Usage
+# Material Utilities Unofficial - Usage
 
 ## Table of Contents
 
@@ -22,13 +22,13 @@
 
 ## Popup menu
 
-The default shortcut for Material Utilities is `[Shift + Q]`.
-[![Material Utilities - popup menu](https://chris.hindefjord.se/wp-content/uploads/2019/07/MU_Menu-e1562975806841.png)](https://chris.hindefjord.se/wp-content/uploads/2019/07/MU_Menu.png)
+The default shortcut for Material Utilities Unofficial is `[Shift + Q]`.
+[![Material Utilities Unofficial - popup menu](https://chris.hindefjord.se/wp-content/uploads/2019/07/MU_Menu-e1562975806841.png)](https://chris.hindefjord.se/wp-content/uploads/2019/07/MU_Menu.png)
 
 *Tip:* All operators and options have descriptive tooltips
 
 You can set the defaults of several options, such as the default name for new materials, in the [Preferences](#preferences)
-(Open Blender Preferences, go to Add-ons, find *Material Utilities*)
+(Open Blender Preferences, go to Add-ons, find *Material Utilities Unofficial*)
 
 ### Assign Material
 
@@ -78,7 +78,7 @@ In the operator panel `[F9]` you can choose to extend your current selection, ot
 
 - **Clean Material Slots**\
 Removes any material slots that aren't assigned to any part of the object.
-By default you can just select to only affect only the active object (otherwise all selected objects). But the new version gives you more options to select which objects to affect (similar to other tools in Material Utilities). To use this, you need to disable the legacy version of Clean Material Slots in the preference first (under Defaults).
+By default you can just select to only affect only the active object (otherwise all selected objects). But the new version gives you more options to select which objects to affect (similar to other tools in Material Utilities Unofficial). To use this, you need to disable the legacy version of Clean Material Slots in the preference first (under Defaults).
 [![Clean Material slots, new and legacy](https://chris.hindefjord.se/wp-content/uploads/2024/08/MU_CleanMatSlots_Both.png)](https://chris.hindefjord.se/wp-content/uploads/2024/08/MU_CleanMatSlots_Both.png)
 - **Remove Active Slot** (Object Mode only)\
 Will remove the material slot that is currently selected.
@@ -106,7 +106,7 @@ Currently this uses text block(s) (one line per material name/substitute) for th
     You have the option to use two text blocks (one for the materials that should be replaced, and one for the materials to replace with).
     Or you can use one text block, where each line contains both the material name and the material that it should be \
     replaced with, separated by, at least, one tab or two spaces (to allow material names with [single] spaces in them)
-2. Go to **Replace Multiple Materials** in the Material Utilities menu
+2. Go to **Replace Multiple Materials** in the Material Utilities Unofficial menu
 3. Select the text blocks that have the materials list for **Original** and **Replacement**.
     If you only have one list that contains both the original material names and replacements, select that for \
     **Original** and leave **Replacement** empty.
@@ -193,7 +193,7 @@ Please check the outliner to verify which collection is active, or choose a spec
 
 ## Material Specials menu
 
-Material Utilities adds some options to the **Material Specials** menu as well (accessible by the small downward pointing arrow to the right of the materials list).\
+Material Utilities Unofficial adds some options to the **Material Specials** menu as well (accessible by the small downward pointing arrow to the right of the materials list).\
 At the bottom of this menu (below **Paste Material**), most of the options from the popup menu (detailed above) is added.
 And at the top two other options are added:
 
@@ -206,9 +206,9 @@ And at the top two other options are added:
 
 ## Preferences
 
-The preferences panel have been updated with version 3.0.0 of Material Utilities. The preferences are now structures in three categories/tabs: `Defaults`, `Texture Set Import` and `Miscellaneous`, and each tab is divided into several subcategories (as "pulldowns").
+The preferences panel have been updated with version 3.0.0 of Material Utilities Unofficial. The preferences are now structures in three categories/tabs: `Defaults`, `Texture Set Import` and `Miscellaneous`, and each tab is divided into several subcategories (as "pulldowns").
 
-[![Material Utilities preferences](https://chris.hindefjord.se/wp-content/uploads/2024/08/MU_Prefs_Def_3.0.2.png)](https://chris.hindefjord.se/wp-content/uploads/2024/08/MU_Prefs_Def_3.0.2.png)
+[![Material Utilities Unofficial preferences](https://chris.hindefjord.se/wp-content/uploads/2024/08/MU_Prefs_Def_3.0.2.png)](https://chris.hindefjord.se/wp-content/uploads/2024/08/MU_Prefs_Def_3.0.2.png)
 
 ### Defaults
 
@@ -230,5 +230,5 @@ This last tab is for settings that doesn't fit in the other two, divided in two 
   (You can still access all the materials via the `Search` option)
 
 - **Extra / Experimental**
-  - By default any Grease Pencil materials are excluded from the lists/menus shown by Material Utilities, but you can choose to include them by enabling `Show Grease Pencil materials`
-  - By checking `Enable Replace Multiple Materials` you'll be able to use [Replace Multiple Material](#replace-multiple-materials) from the Material Utilities menu. This feature is functional, but perhaps not very polished.
+  - By default any Grease Pencil materials are excluded from the lists/menus shown by Material Utilities Unofficial, but you can choose to include them by enabling `Show Grease Pencil materials`
+  - By checking `Enable Replace Multiple Materials` you'll be able to use [Replace Multiple Material](#replace-multiple-materials) from the Material Utilities Unofficial menu. This feature is functional, but perhaps not very polished.

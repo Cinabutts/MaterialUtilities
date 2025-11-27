@@ -176,7 +176,7 @@ class VIEW3D_MT_materialutilities_preferences(AddonPreferences):
         )
     tex_add_to_editor_header: BoolProperty(
         name = "Add menu to shader editor header",
-        description = "Add Material Utilities menu to shader editor header",
+        description = "Add Material Utilities Unofficial menu to shader editor header",
         default = False,
         )
     tex_only_selected: BoolProperty(
@@ -287,9 +287,9 @@ class VIEW3D_MT_materialutilities_preferences(AddonPreferences):
         name = "Category",
         description = "Preferences Category",
         items = [
-            ('DEFAULTS', "Defaults",           "Default options for Material Utilities in the 3D View"),
+            ('DEFAULTS', "Defaults",           "Default options for Material Utilities Unofficial in the 3D View"),
             ('TEXTURE',  "Texture Set Import", "Default options for PBR texture import"),
-            ('MISC',     "Miscellaneous",      "Miscellaneous settings for Material Utilities"),
+            ('MISC',     "Miscellaneous",      "Miscellaneous settings for Material Utilities Unofficial"),
         ],
         default = 'DEFAULTS'
     )
@@ -346,7 +346,7 @@ class VIEW3D_MT_materialutilities_preferences(AddonPreferences):
 
         if self.pref_category == 'DEFAULTS':
             layout.separator()
-            layout.label(text = "Here you can change the default values and behaviors of the Material Utilities, categorized by function")
+            layout.label(text = "Here you can change the default values and behaviors of the Material Utilities Unofficial, categorized by function")
             layout.separator()
 
             layout.prop(self, 'defaults_assign_expanded',

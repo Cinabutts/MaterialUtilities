@@ -1,4 +1,4 @@
-# Material utilities v3.0.2 (Stable)
+# Material Utilities Unofficial v3.0.2 (Stable)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -10,7 +10,7 @@ Please read the list of [Known issues](#known-issues) below, if your problem isn
 
 ## Version
 
-The current stable version of Material Utilities is [**v3.0.2**](CHANGELOG.md#v3.0.2)\
+The current stable version of Material Utilities Unofficial is [**v3.0.2**](CHANGELOG.md#v3.0.2)\
 (Major version indicates big changes or feature adds, Minor version bigger bugfixes and changes to existing features,
   Patch version [last number] indicates small changes and fixes)
 
@@ -72,7 +72,7 @@ Thanks to Meta-Androcto for handling the inclusion into the Blender repository.
 
 ## Usage / Documentation
 
-The default shortcut for Material Utilities is `[Shift + Q]` (in the 3D Viewport and Shader Editor).
+The default shortcut for Material Utilities Unofficial is `[Shift + Q]` (in the 3D Viewport and Shader Editor).
 You can find more usage documentation in the [documentation](docs/) ([3D Viewport Menu](docs/usage.md), [Shader Editor Menu](docs/pbr_import.md))
 
 ## Known issues
